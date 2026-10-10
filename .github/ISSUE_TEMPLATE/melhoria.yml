@@ -1,0 +1,25 @@
+name: Sugerir melhoria
+description: Proponha uma melhoria funcional, técnica ou operacional.
+title: "[melhoria] "
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema ou oportunidade
+      description: Qual situação esta melhoria resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+      description: Descreva a solução desejada e quem será impactado.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
