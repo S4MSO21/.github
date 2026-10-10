@@ -1,0 +1,33 @@
+name: Relatar problema
+description: Registre um comportamento incorreto ou falha operacional.
+title: "[bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Obrigado por registrar o problema. Não inclua credenciais, dados pessoais ou dados de produção."
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Onde e quando o problema ocorreu?
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: observado
+    attributes:
+      label: Resultado observado
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Passos para reproduzir
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
